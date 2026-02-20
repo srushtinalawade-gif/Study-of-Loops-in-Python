@@ -109,5 +109,101 @@ for i in range(1, 11):
      
      Output: 1, 2, 3, 4, 6, 7
 
+# Algorithms
+
+1. Factorial of a Number
+
+Start
+
+Initialize loop counter i = 1 and accumulator fac = 1.
+
+Input the target number n.
+
+Repeat while i <= n:
+
+Multiply fac by i.
+
+Increment i by 1.
+
+Print the final value of fac.
+
+Stop
+
+2. Reverse a Number
+
+Start
+
+Input the number a.
+
+Initialize rev = 0.
+
+Repeat while a > 0:
+
+Find the last digit using modulo: dig = a % 10.
+
+Update reverse: rev = (rev * 10) + dig.
+
+Remove the last digit from a using floor division: a //= 10.
+
+Print the reversed number rev.
+
+Stop
+
+3. Count Digits in a Number
+
+Start
+
+Input the number n.
+
+Initialize count = 0.
+
+Repeat while n > 0:
+
+Increment count by 1.
+
+Remove the last digit: n //= 10.
+
+Print the value of count.
+
+Stop
+
+4. Armstrong Number
+
+Start
+
+Input number N as a string to easily iterate over characters.
+
+Initialize total = 0.
+
+Repeat for each character i in N:
+
+Convert i to integer and raise it to the power of the length of N.
+
+Add the result to total.
+
+Condition Check: If total is equal to the integer value of N:
+
+Print "It is an Armstrong Number".
+
+Else, Print "It is not an Armstrong Number".
+
+Stop
+
+5. All Possible Combinations of 3 Digits
+
+Start
+
+Input a 3-digit number N.
+
+Extract each digit and store them in a list d.
+
+Use three nested loops (i, j, k) to iterate through the indices (0 to 2) of the list d.
+
+Condition Check: Within the innermost loop, check if i, j, and k are all distinct (i != j, j != k, and k != i).
+
+Print the combination d[i], d[j], d[k] if the condition is met.
+
+Stop
+
 ## Conclusion: 
 This experiment successfully explored the syntax and logic of Python loops. We verified that for and while loops serve different iterative needs, while control statements like break, continue, and pass offer precise management over how and when code blocks are executed.
